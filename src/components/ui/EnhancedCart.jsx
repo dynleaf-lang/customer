@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo, createContext, useContext } from 'react';
+import React, { useState, useEffect, memo, useCallback, createContext, useContext } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from '../../context/CartContext';
 import { useRestaurant } from '../../context/RestaurantContext';

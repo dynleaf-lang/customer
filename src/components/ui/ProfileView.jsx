@@ -1,3 +1,4 @@
+import React from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useFavorites } from '../../context/FavoritesContext';
 import ProtectedRoute from '../Utils/ProtectedRoute';

@@ -1,4 +1,4 @@
-import  { useState, useCallback, useMemo, useEffect } from 'react';
+import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useRestaurant } from '../../context/RestaurantContext';
 import { useCart } from '../../context/CartContext';
@@ -8,7 +8,7 @@ import SearchBar from './SearchBar';
 import { theme } from '../../data/theme';
 
 const SearchView = () => {
-  const { menuItems, categories, error } = useRestaurant();
+  const { menuItems, categories, loading, error } = useRestaurant();
   const { addItem } = useCart();
   const { currencySymbol, formatCurrency } = useCurrency();
   const { isMobile, isTablet, isDesktop } = useResponsive();

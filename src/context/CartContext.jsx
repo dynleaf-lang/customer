@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect, useRef, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef, useCallback } from 'react';
 import { useRestaurant } from './RestaurantContext';
 import { useTax } from './TaxContext';
 import { api as authApi } from '../utils/authApiClient';
